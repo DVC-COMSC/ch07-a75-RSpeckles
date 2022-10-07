@@ -1,0 +1,34 @@
+{
+  "tests": [
+    {
+      "name": "T1",
+      "setup": "",
+      "run": "python main.py",
+      "input": "1 3 2\r\n1 2 3 4 5",
+      "output": "[\\w, \\W]*False[\\w,\\W]*",
+      "comparison": "regex",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "T2",
+      "setup": "",
+      "run": "python main.py",
+      "input": "1 3 2\r\n4 1 3 2 5",
+      "output": "[\\w, \\W]*True[\\w,\\W]*",
+      "comparison": "regex",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "T3",
+      "setup": "",
+      "run": "python main.py",
+      "input": "1 4 5\r\n1 2 3 4 5",
+      "output": "[\\w, \\W]*False[\\w,\\W]*",
+      "comparison": "regex",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}
