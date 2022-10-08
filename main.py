@@ -18,7 +18,7 @@ flag = 0
 #if any matching values are found, the second for loop runs through the rest of num1's values to see if they all match
 for i in range(len(num2)):
 	if num2[i] == num1[0]:
-		for j in range(len(num1)):
+		for j in range(len(num1)+1):
 			#try, except used in case the values being compared would run beyong num2's length
 			try:
 				if count == len(num1):
@@ -33,7 +33,9 @@ for i in range(len(num2)):
 			except IndexError:
 				break
 
-
+print("count: ", count)
+print("num1: ", len(num1))
+print("Flag: ", flag)
 if flag == 1:
 	print(True)
 else:
