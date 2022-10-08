@@ -5,7 +5,7 @@ num1 = list(map(int, input().split()))
 num2 = list(map(int, input().split()))
 
 if len(num1) > len(num2):
-	print ('false')
+	print ('False')
 	sys.exit(0)
 
 #This variable counts how many numbers from num1 in a row have been found in num2
